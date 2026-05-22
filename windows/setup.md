@@ -101,7 +101,7 @@ fpath+=${ZSH_CUSTOM:-${ZSH:-~/.oh-my-zsh}/custom}/plugins/zsh-completions/src
 - Install syntax highlighting
 
 ```shell
-git clone https://github.com/zsh-users/zsh-syntax-highlighting.git
+git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting
 ```
 
 - Install zsh-vi-mode
@@ -148,15 +148,9 @@ in the ~/.config/colorls/dark_colors.yaml file, change the colors
 
 ```shell
 # Change only main colors
-unrecognized_file: '#a89984' #gold -> gray
-recognized_file:   '#d79921' #yellow
-executable_file:   '#98971a' #lime -> green
-dir:               '#458588' #dodgerblue -> blue
+unrecognized_file: '#a89984' # gold -> gray
+recognized_file:   '#d79921' # yellow
+executable_file:   '#98971a' # lime -> green
+dir:               '#458588' # dodgerblue -> blue
 ```
 
-
-### Install Authy
-
-```shell
-winget install -e --id Twillio.Authy
-```
